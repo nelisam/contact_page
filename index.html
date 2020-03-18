@@ -42,71 +42,157 @@ Join our mailing list to stay up-to-date on upcoming courses and events. -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
-<header></header>
+        <header>
+            <nav class="navbar">
+                <img src="images/maven_academy.png" alt="images">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Course</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cart</a>
+                </li>
+              </ul>
+            </nav>
+        </header>
 
 <section class = "home">
     <h1>Get in touch with us</h1>
-    <img src="images/contact-banner.png.png" alt="">
+    <img src="images/contact-banner.png" alt="">
     <p>Get pumped, get skilled</p>
 </section>
 <section class="container-fluid">
     <section class="row">
-        <div class="col-sm bg-warning">
-            <p>
-                The Maven Academy
-                Address:
-            </p>
-            <p>
-                Office F01A, Brookside Office Park, 11 Imam Haron Road,
-                Claremont, Western Cape, 7708
-            </p>
-            <p>
-                
-            </p>
-          </div>
-          <div class="col-sm bg-danger">
-            2 of 2
+        <div class="col-sm-6 bg-warning">
+            <div>
+                <h2>The Maven Academy</h2>
+                <p><strong>Address:</strong></p>
+                <p>Office F01A, Brookside Office Park, 11 Imam Haron Road, <br>Claremont, Western Cape, 7708</p>
+                <p><strong>Say hello:</strong></p>
+                <p><a shref="mailto:hello@themavenacademy.one">hello@themavenacademy.one</a></p>
+                <p>Or call us directly on <a href="tel:+27 21 461 68 17"><strong>+27 21 461 68 17 </strong></a></p>
+                <p>Schedule a call with one of our friendly course consultants and <br>we’ll get back to you within 24 hours.</p>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li>
+                        <img src="images/facebook.svg" alt="facebook">
+                    </li>
+                    <li>
+                        <img src="images/twitter.svg" alt="twitter">
+                    </li>
+                    <li>
+                        <img src="images/instagram.svg" alt="instagram">
+                    </li>
+                </ul>
+            </div>
+        </div>
+          <div class="col-sm-6">
+            <div>
+                <p><strong>Send us an enquiry </strong></p>
+                <p>Schedule a call with one of our friendly course consultants and we’ll get back to you within 24 hours. </p>
+            </div>
+            <form id="frmcontactus" name="frmcontactus" method="post" class="form-error">
+                <div class="form-group">
+                    <input type="text" name="fname" id="fname" class="form-control" placeholder="Your name" data-rule-required="true" data-msg-required="Please enter Your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="lname" id="lname" class="form-control" placeholder="Your surname" data-rule-required="true" data-msg-required="Please enter Your surname">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Your email address" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" autocapitalize="none" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="cnumber" id="cnumber" class="form-control" placeholder="Your contact number" data-rule-required="true" data-rule-number="true" data-msg-required="Please enter Your contact number" data-msg-number="Please enter valid contact Number">
+                </div>
+                <div class="form-group">
+                    <textarea name="query" id="query" class="form-control" rows="5" cols="1" placeholder="Your query" data-rule-required="true" data-msg-required="Please enter Your query"></textarea>
+                </div>
+                <button type="button" class="btn btn-blue small d-block">Send enquiry </button>
+            </form>
           </div>
     </section>
 </section>
     
-<section></section>
-<footer></footer>
+
+
+
+
+<!-- --------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<footer>
+<div class="row upper-footer">
+    <div class="col-sm-3">
+        <p>GENERAL</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </div>
+      <div class="col-sm-3">
+        <p>WHY US</p>
+        <ul>
+            <li><a href="#">Why Study with us ?</a></li>
+            <li><a href="#">Financial Aid - Study for Just R1</a></li>
+            <li><a href="#">Internship - Work, Learn & Earn</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <p>DEVELOPER COURSES</p>
+        <ul>
+            <li><a href="#">Full Stack Web Developer</a></li>
+            <li><a href="#">Front End Web Fundamentals</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <p>CONTACT US</p>
+        <ul> 
+            <li>
+                <span><img src="images/phone-icon.svg" alt=""></span>
+                <a href="#">+27 21 461 68 17</a>
+            </li>
+            <li>
+                <span><img src="images/email-icon.svg" alt=""></span>
+                <a href="#">hello@themavenacademy.one</a>
+            </li>
+            <li>
+                <span><img src="images/location-icon.svg" alt=""></span>
+                <a href="#">Office F01A, Brookside Office Park, 11 Imam Haron Road, Claremont, Western Cape, 7708</a>
+            </li>
+        </ul>
+      </div>
+</div>
+<div class="lower-footer">
+    <div class="container">
+<div class="row ">
+    <div class="col-md-7 align-self-center">
+        <p>All Rights Reserved, Maven Academy (Pty) Ltd.</p>
+      </div>
+      <div class="col-md-5 align-self-center">
+        <div class="footer-social">
+            <ul>
+                <li>
+                    <img src="images/facebook.svg" alt="facebook">
+                </li>
+                <li>
+                    <img src="images/twitter.svg" alt="twitter">
+                </li>
+                <li>
+                    <img src="images/instagram.svg" alt="instagram">
+                </li>
+            </ul>
+        </div>  
+      </div>
+    </div>
+</div>
+</div>
+</footer>  
         
         <script src="" async defer></script>
     </body>
 </html>
-
-
-
-
-<!-- <section>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm  bg-danger">
-           <h6>The Maven Academy</h6> 
-
-           <p>
-               We’re disrupting the way you learn new technology by immersing you into real-world work conditions so you can learn what you need to hit the ground running in the top development jobs at the head of the line.
-            </p>
-
-           <p>
-               After two decades of building bespoke software solutions, and from our own hands-on coding experience, we’ve crafted a comprehensive software development curriculum that equips you for today’s complex technical work environments and prepares you for the future with exposure to cutting-edge technology.
-            </p>
-
-          </div>
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="images/recent-graduates.svg" alt="">
-                </div>
-                <div class="col-sm-6">
-                    <h5>Internship Programme</h5>
-                    <p>
-                        Don’t struggle with the job hunt! Hit the ground sprinting with our exclusive platform that allows you to Work, Learn, and Earn at the same time.
-                    </p>
-                </div>
-              </div>
-          </div>
-        </div> -->
-      </div>
